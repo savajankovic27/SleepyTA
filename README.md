@@ -1,9 +1,13 @@
 
-# Assignment 2 3SH3 Group 47
+**Sleepy TA C project hosted on Linux**
 
-Karn - Worked on the TA thread and the main function. 
-Sava - Worked on the student thread and the main function. 
+This project simulates the **Sleeping Teaching Assistant** problem using **POSIX threads, mutex locks, and semaphores**. The TA helps students with programming assignments, but if no students are present, they take a nap. Students arrive randomly, seek help, and either wake up the TA, wait in the hallway, or leave if no chairs are available. The simulation ensures proper synchronization between students and the TA.
 
-Both were troubleshooting throughout
+### Features:
+- Multi-threaded implementation using **pthreads**.
+- Synchronization using **mutex locks** and **semaphores**.
+- Realistic behavior with randomized student arrival and help times.
 
-Note that this assignment involved an MSAF. 
+Run using:  
+```bash
+gcc -pthread -o A2 A2.c && ./A2
